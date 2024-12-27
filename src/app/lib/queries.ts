@@ -4,8 +4,20 @@ export const GET_POKEMON = gql`
     query GetPokemon($name: String!) {
         pokemon(name: $name) {
             id
+            number
             name
+            weight {
+                minimum
+                maximum
+            }
+            height{
+                minimum
+                maximum
+            }
+            classification
             types
+            resistant
+            weaknesses
             attacks {
                 fast {
                     name
@@ -16,10 +28,13 @@ export const GET_POKEMON = gql`
                     type
                 }
             }
+            image
             evolutions {
                 id
+                number
                 name
                 types
+                image
             }
         }
     }

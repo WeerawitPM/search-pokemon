@@ -14,5 +14,9 @@ export default {
       },
     },
   },
-  plugins: [],
+  darkMode: "selector",
+  daisyui: {
+    themes: ["cupcake"],
+  },
+  plugins: [require('daisyui'),],
 } satisfies Config;
