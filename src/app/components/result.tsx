@@ -3,7 +3,6 @@
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useQuery } from '@apollo/client';
 import { GET_POKEMON } from '../lib/queries';
-import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Result() {
